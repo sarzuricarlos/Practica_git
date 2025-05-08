@@ -8,34 +8,51 @@ System.out.println("2 = Resta");
 System.out.println("3 = multiplicacion");
 System.out.println("4 = Division");
 int operacion=sc.nextInt();
-int num1,num2;
-int res;
+double num1,num2;
+double res;
 System.out.println("ingresa tu primer numero");
 num1=sc.nextInt();
 System.out.println("ingresa tu segundo numero");
 num2=sc.nextInt();
-
+switch(operacion){
+case 1:
+res=suma(num1,num2);
+System.out.println("Tu resultado es : "+res);
+break;
+case 2:
+res=resta(num1,num2);
+System.out.println("Tu resultado es : "+res);
+break;
+case 3:
+res=Multiplicacion(num1,num2);
+System.out.println("Tu resultado es : "+res);
+break;
+case 4:
+res=division(num1,num2);
+System.out.println("Tu resultado es : "+res);
+break;
+}
 }
 
-public double suma(double a, double b){
+public static double suma(double a, double b){
     double resultado;
     resultado = a + b;
     return resultado;
 }
 
-public double resta (double x, double y){
+public static double resta (double x, double y){
     double res=0;
     res = x-y; 
     return res;
 }
 
-public double Multiplicacion(int num1,int num2){
+public static double Multiplicacion(double num1,double num2){
     double res=0;
     res=num1*num2;
     return res;
 }
 
-public double division(double a, double b){
+public static double division(double a, double b){
     double resultado;
     resultado = a/b;
     return resultado;
