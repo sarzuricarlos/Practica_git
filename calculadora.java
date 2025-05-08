@@ -1,6 +1,11 @@
 public class calculadora{
 public static void main(String args[]){
 
+System.out.println("que quieres hacer?");
+System.out.println("Suma");
+System.out.println("Resta");
+System.out.println("multiplicacion");
+System.out.println("Division");
 
 }
 
