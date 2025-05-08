@@ -1,11 +1,19 @@
+import java.util.Scanner;
 public class calculadora{
 public static void main(String args[]){
-
+Scanner sc = new Scanner(System.in);
 System.out.println("que quieres hacer?");
-System.out.println("Suma");
-System.out.println("Resta");
-System.out.println("multiplicacion");
-System.out.println("Division");
+System.out.println("1 = Suma");
+System.out.println("2 = Resta");
+System.out.println("3 = multiplicacion");
+System.out.println("4 = Division");
+int operacion=sc.nextInt();
+int num1,num2;
+int res;
+System.out.println("ingresa tu primer numero");
+num1=sc.nextInt();
+System.out.println("ingresa tu segundo numero");
+num2=sc.nextInt();
 
 }
 
