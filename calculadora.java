@@ -9,4 +9,9 @@ public double suma(double a, double b){
     resultado = a + b;
     return resultado;
 }
+public double Multiplicacion(int num1,int num2){
+ double res=0;
+ res=num1*num2;
+  return res;
+}
 }
